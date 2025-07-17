@@ -92,7 +92,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
-// Na peru meghamsh
