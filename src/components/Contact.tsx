@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Mail, Phone, Linkedin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -53,7 +54,7 @@ const Contact = () => {
 };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-secondary/30">
+    <section id="contact" className="py-20 px-6 bg-secondary/30 scroll-mt-28">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -70,38 +71,58 @@ const Contact = () => {
               Get In Touch
             </h3>
             
-            <div className="space-y-6">
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Email</h4>
-                <p className="text-muted-foreground">
-                  <a 
-                    href="mailto:mrouthumeghamsh@gmail.com" 
-                    className="text-muted-foreground hover:text-red-600 hover:bg-red-50 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 hover:scale-105 px-3 py-1 rounded-lg inline-block"
-                  >
-                    mrouthumeghamsh@gmail.com
-                  </a>
-                </p>
-              </div>
-              
-              <div>
-                <h4 className="font-medium text-foreground mb-2">LinkedIn</h4>
-                <p className="text-muted-foreground">
-                  <a 
-                    href="https://www.linkedin.com/in/routhu-meghamsh-9b6972227/ " 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-blue-600 hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105 px-3 py-1 rounded-lg inline-block"
-                  >
-                    linkedin.com/in/meghamshrouthu
-                  </a>
-                </p>
-              </div>
-              
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Location</h4>
-                <p className="text-muted-foreground">Saint Louis, Mo</p>
-              </div>
+            <div>
+              <h4 className="font-medium text-foreground mb-2 flex items-center gap-2">
+                <Mail className="w-5 h-5 text-primary" />
+                Email
+              </h4>
+              <p className="text-muted-foreground">
+                <a 
+                  href="mailto:mrouthumeghamsh@gmail.com" 
+                  className="text-muted-foreground hover:text-red-600 hover:bg-red-50 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 hover:scale-105 px-3 py-1 rounded-lg inline-block"
+                >
+                  mrouthumeghamsh@gmail.com
+                </a>
+              </p>
             </div>
+
+            <div>
+              <h4 className="font-medium text-foreground mb-2 flex items-center gap-2">
+                <Linkedin className="w-5 h-5 text-primary" />
+                LinkedIn
+              </h4>
+              <p className="text-muted-foreground">
+                <a 
+                  href="https://www.linkedin.com/in/routhu-meghamsh-9b6972227/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-blue-600 hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105 px-3 py-1 rounded-lg inline-block"
+                >
+                  linkedin.com/in/meghamshrouthu
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-medium text-foreground mb-2 flex items-center gap-2">
+                <Phone className="w-5 h-5 text-primary" />
+                Mobile
+              </h4>
+              <p className="text-muted-foreground">
+                <a 
+                href="tel:+13142242774"
+                className="text-muted-foreground hover:text-green-600 hover:bg-green-50 hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 hover:scale-105 px-3 py-1 rounded-lg inline-block"
+                >
+                  +1 (314) 224-2774
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-medium text-foreground mb-2">Location</h4>
+              <p className="text-muted-foreground">Saint Louis, MO</p>
+            </div>
+
           </div>
 
           <Card className="bg-card border-border shadow-sm animate-fade-in">

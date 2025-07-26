@@ -21,46 +21,47 @@ import {
 } from 'lucide-react';
 
 const Skills = () => {
-  const skills = [
-    { name: "Python", icon: Code },
-    { name: "R", icon: BarChart3 },
-    { name: "SQL", icon: Database },
-    { name: "JavaScript", icon: Code },
-    { name: "Pandas", icon: Layers },
-    { name: "NumPy", icon: Calculator },
-    { name: "Scikit-learn", icon: Brain },
-    { name: "TensorFlow", icon: Zap },
-    { name: "Tableau", icon: PieChart },
-    { name: "Power BI", icon: BarChart3 },
-    { name: "Matplotlib", icon: TrendingUp },
-    { name: "HTML", icon: GitBranch },
-    { name: "Regression Analysis", icon: TrendingUp },
-    { name: "Hypothesis Testing", icon: Target },
-    { name: "Seaborn", icon: AreaChart },
-    { name: "GitHub", icon: FileText },
-    { name: "XGBoost", icon: Zap },
-    { name: "PyTorch", icon: Brain },
-    { name: "Apache Spark", icon: Zap },
-    { name: "MLlib", icon: Zap },
-    { name: "Jupyter Notebook", icon: Terminal },
-    { name: "PyCharm", icon: Terminal },
-    { name: "GitHub Actions", icon: FileText },
-    { name: "Feature Engineering", icon: Layers },
-    { name: "Clustering (K-Means)", icon: Split },
-    { name: "Data Cleaning", icon: LucideLayers2 },
-    { name: "Model Evaluation (RMSE)", icon: Target },
-    { name: "Campaign Optimization", icon: TrendingUp },
-    { name: "VS Code", icon: Terminal },
-    { name: "Data Wrangling", icon: Layers },
-    { name: "Data Modeling", icon: BarChart3 },
-    { name: "Data Warehousing", icon: Database },
-    { name: "EDA (Erploratory Data Analysis)", icon: PieChart },
-    { name: "Data Normalization", icon: BarChart3 },
-    { name: "A/B Testing", icon: Split }
-  ];
+const skills = [
+  { name: "Python", icon: Code, color: "#3776AB" },           
+  { name: "R", icon: BarChart3, color: "#1D5DA0" },           
+  { name: "SQL", icon: Database, color: "#F29111" },          
+  { name: "JavaScript", icon: Code, color: "#F7DF1E" },       
+  { name: "Pandas", icon: Layers, color: "#150458" },         
+  { name: "NumPy", icon: Calculator, color: "#013243" },      
+  { name: "Scikit-learn", icon: Brain, color: "#F7931E" },    
+  { name: "TensorFlow", icon: Zap, color: "#FF6F00" },        
+  { name: "Tableau", icon: PieChart, color: "#E97627" },      
+  { name: "Power BI", icon: BarChart3, color: "#F2C811" },    
+  { name: "Matplotlib", icon: TrendingUp, color: "#11557C" }, 
+  { name: "HTML", icon: GitBranch, color: "#E34F26" },
+  { name: "Regression Analysis", icon: TrendingUp, color: "#6B7280" },
+  { name: "Hypothesis Testing", icon: Target, color: "#6366F1" },
+  { name: "Seaborn", icon: AreaChart, color: "#607D8B" },
+  { name: "GitHub", icon: FileText, color: "#181717" },
+  { name: "XGBoost", icon: Zap, color: "#EA5C10" },
+  { name: "PyTorch", icon: Brain, color: "#EE4C2C" },
+  { name: "Apache Spark", icon: Zap, color: "#E25A1C" },
+  { name: "MLlib", icon: Zap, color: "#E25A1C" },
+  { name: "Jupyter Notebook", icon: Terminal, color: "#F37626" },
+  { name: "PyCharm", icon: Terminal, color: "#21D789" },
+  { name: "GitHub Actions", icon: FileText, color: "#2088FF" },
+  { name: "Feature Engineering", icon: Layers, color: "#16A34A" },
+  { name: "Clustering (K-Means)", icon: Split, color: "#DB2777" },
+  { name: "Data Cleaning", icon: LucideLayers2, color: "#64748B" },
+  { name: "Model Evaluation (RMSE)", icon: Target, color: "#2563EB" },
+  { name: "Campaign Optimization", icon: TrendingUp, color: "#0EA5E9" },
+  { name: "VS Code", icon: Terminal, color: "#007ACC" },
+  { name: "Data Wrangling", icon: Layers, color: "#334155" },
+  { name: "Data Modeling", icon: BarChart3, color: "#9333EA" },
+  { name: "Data Warehousing", icon: Database, color: "#4B5563" },
+  { name: "EDA (Erploratory Data Analysis)", icon: PieChart, color: "#7C3AED" },
+  { name: "Data Normalization", icon: BarChart3, color: "#14B8A6" },
+  { name: "A/B Testing", icon: Split, color: "#0F766E" }
+];
+
 
   return (
-    <section id="skills" className="py-20 px-6 bg-muted/30">
+    <section id="skills" className="min-h-screen scroll-mt-28 ">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -77,14 +78,35 @@ const Skills = () => {
             return (
               <Card 
                 key={index} 
-                className="bg-card border-border shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 animate-fade-in group"
-                style={{ animationDelay: `${index * 0.05}s` }}
+                className="bg-card border-border shadow-sm transition-all duration-300 hover:scale-105 animate-fade-in group"
+                style={{ 
+                  animationDelay: `${index * 0.05}s`,
+                  backgroundColor: 'White',
+                  transition: 'background-color 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.backgroundColor = `${skill.color}30`;  // hover bg
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.backgroundColor = 'white';  // reset
+                }}
               >
+
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 flex justify-center">
-                    <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                      <IconComponent className="w-6 h-6 text-primary" />
+                    <div 
+                      className="p-3 rounded-full transition-all duration-300 group-hover:scale-110"
+                      style={{
+                        backgroundColor: `${skill.color}20`,
+                      }}
+                    >
+                      <IconComponent 
+                        className="w-6 h-6 transition-colors duration-300"
+                        style={{ color: skill.color }}
+                      />
                     </div>
+
+
                   </div>
                   <h3 className="font-semibold text-foreground text-sm md:text-base">
                     {skill.name}

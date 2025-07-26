@@ -21,7 +21,7 @@ const Projects = () => {
     },
     {
       title: "Customer Sales Analysis",
-      description: "Analyzed 500,000+ retail transactions using Python and Power BI to identify customer segments and business opportunities. Built interactive dashboard revealing that top 20% of customers generate 67% of revenue, leading to targeted retention strategies with 25% potential revenue impact.",
+      description: "I analyzed over 500,000 retail transactions to identify customer behavior patterns. Using Python for data processing and RFM analysis, I discovered 6 customer segments and found that our top 20% of customers drive 67% of revenue. I created an interactive Power BI dashboard that helps stakeholders track key metrics and implemented recommendations that could improve customer retention by 25%",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3VzdG9lbWVyJTIwYW5hbHl0aWNzfGVufDB8fDB8fHww",
       tags: ["Python", "Power BI", "Pandas", "Data Cleaning", "Statistical Analysis", "Dashboard Development", "Customer Segmentation", "Data Analytics", "Business Intelligence", "Revenue Analysis"],
       type: "Business Analytics"
@@ -29,7 +29,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-secondary/30">
+    <section id="projects" className="min-h-screen py-20 bg-gray-50 scroll-mt-28">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

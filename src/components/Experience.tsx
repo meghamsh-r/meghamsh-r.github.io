@@ -39,7 +39,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="min-h-screen py-20 bg-white scroll-mt-28">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
