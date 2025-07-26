@@ -1,71 +1,48 @@
-
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import profilePhoto from './profile_photo.png';
+import { Mail, Phone, Github } from 'lucide-react';
+import profilePhoto from './Profile_.jpg';
 
 const Hero = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-20">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
-        <div className="mb-8 flex justify-center">
-          <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/20">
-            <AvatarImage 
-              src={profilePhoto} 
-              alt="Profile"
-              className="object-cover"
-            />
-            <AvatarFallback className="text-2xl md:text-3xl bg-primary/10 text-primary">
-              RM
-            </AvatarFallback>
-          </Avatar>
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 bg-white scroll-mt-28">
+      <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center gap-12 py-16">
+        
+        {/* Left: Text Section */}
+        <div className="flex-1 text-left">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+            Meghamsh <span className="text-primary">Routhu</span>
+          </h1>
+          
+          <h2 className="text-2xl md:text-3xl text-gray-700 mb-4 font-medium">
+            Data Engineer specialized in Analytics, Pipelines, and Insight Delivery
+          </h2>
+
+          <p className="text-lg text-gray-600 mb-6 leading-relaxed max-w-xl">
+            Experienced in building scalable data architectures, optimizing ETL pipelines, and driving strategic insights through machine learning and data visualization.
+          </p>
+
+          {/* Contact Icons */}
+          <div className="flex gap-6 mt-4">
+            <a href="mailto:mrouthumeghamsh@gmail.com" aria-label="Email">
+              <Mail className="w-6 h-6 text-gray-700 hover:text-primary" />
+            </a>
+            <a href="tel:+13142242774" aria-label="Phone">
+              <Phone className="w-6 h-6 text-gray-700 hover:text-primary" />
+            </a>
+            <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Github className="w-6 h-6 text-gray-700 hover:text-primary" />
+            </a>
+          </div>
         </div>
-        
-        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-          Meghamsh <span className="text-primary">Routhu</span>
-        </h1>
-        
-        <p className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light">
-          Data Scientist
-        </p>
-        
-        <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          Recent graduate with a Master’s in Information Systems and one year of experience as a Digital Strategy Intern at Excelerate. Strong foundation in data analytics, data engineering, and frontend development. Proficient in Python, SQL, Power BI, and web technologies including HTML, CSS, and JavaScript. Demonstrated ability to deliver insights through data visualization and to build user-focused interfaces. Actively seeking roles in data analysis, data engineering, or frontend development to contribute technical skills and business insight in a collaborative environment.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Button 
-            size="lg" 
-            onClick={() => scrollToSection('projects')}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3"
-          >
-            View My Work
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            onClick={() => scrollToSection('contact')}
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3"
-          >
-            Get In Touch
-          </Button>
+
+        {/* Right: Profile Image */}
+        <div className="flex-1 flex justify-center">
+          <img
+            src={profilePhoto}
+            alt="Meghamsh Routhu"
+            className="rounded-3xl w-full max-w-md object-cover shadow-lg"
+          />
         </div>
-        
-        <button 
-          onClick={() => scrollToSection('about')}
-          className="animate-bounce text-muted-foreground hover:text-primary transition-colors"
-          aria-label="Scroll to about section"
-        >
-          <ArrowDown size={24} />
-        </button>
       </div>
     </section>
   );

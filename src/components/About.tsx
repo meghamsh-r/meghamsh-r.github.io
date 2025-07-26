@@ -11,7 +11,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Emerging Data Scientist with a strong foundation in machine learning, data engineering, and business analytics.
+            Emerging Data Engineer with a strong foundation in machine learning, data engineering, and business analytics.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ const About = () => {
             <Card className="bg-card border-border shadow-sm">
               <CardContent className="p-8">
                 <div className="w-full h-64 bg-gradient-to-br from-primary/20 to-accent rounded-lg mb-6 flex items-center justify-center">
-                  <div className="text-6xl">📊</div>
+                  <div className="text-9xl">📊</div>
                 </div>
               </CardContent>
             </Card>
@@ -41,8 +41,8 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-foreground mb-2">Experience</h4>
-                <p className="text-muted-foreground">3+ Years</p>
+                <h4 className="font-semibold text-foreground mb-2"> </h4>
+                <p className="text-muted-foreground"> </p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Projects</h4>
@@ -50,7 +50,7 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Focus</h4>
-                <p className="text-muted-foreground">Data Scientist</p>
+                <p className="text-muted-foreground">Data Engineer</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Approach</h4>
