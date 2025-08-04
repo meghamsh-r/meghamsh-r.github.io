@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://meghamsh-r.github.io/Meghamsh-Portfolio.github.io/ ",
+  "homepage": "https://meghamsh-r.github.io/ ",
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp 404.html docs/404.html && ls -l docs",
