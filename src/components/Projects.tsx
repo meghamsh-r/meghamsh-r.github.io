@@ -21,7 +21,7 @@ const Projects = () => {
     },
     {
       title: "Customer Sales Analysis",
-      description: "I analyzed over 500,000 retail transactions to identify customer behavior patterns. Using Python for data processing and RFM analysis, I discovered 6 customer segments and found that our top 20% of customers drive 67% of revenue. I created an interactive Power BI dashboard that helps stakeholders track key metrics and implemented recommendations that could improve customer retention by 25%",
+      description: "I analyzed over 100,000 retail transactions to identify customer behavior patterns. Using Python for data processing and RFM analysis, I discovered 6 customer segments and found that our top 20% of customers drive 67% of revenue. I created an interactive Power BI dashboard that helps stakeholders track key metrics and implemented recommendations that could improve customer retention by 25%",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3VzdG9lbWVyJTIwYW5hbHl0aWNzfGVufDB8fDB8fHww",
       tags: ["Python", "Power BI", "Pandas", "Data Cleaning", "Statistical Analysis", "Dashboard Development", "Customer Segmentation", "Data Analytics", "Business Intelligence", "Revenue Analysis"],
       type: "Business Analytics"
