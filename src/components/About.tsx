@@ -50,7 +50,7 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Focus</h4>
-                <p className="text-muted-foreground">Data Engineer</p>
+                <p className="text-muted-foreground">Data Analyst</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Approach</h4>
