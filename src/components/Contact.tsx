@@ -93,12 +93,12 @@ const Contact = () => {
               </h4>
               <p className="text-muted-foreground">
                 <a 
-                  href="https://www.linkedin.com/in/routhu-meghamsh-9b6972227/" 
+                  href="https://www.linkedin.com/in/meghamshr/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-blue-600 hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105 px-3 py-1 rounded-lg inline-block"
                 >
-                  linkedin.com/in/meghamshrouthu
+                  linkedin.com/in/meghamshr
                 </a>
               </p>
             </div>
