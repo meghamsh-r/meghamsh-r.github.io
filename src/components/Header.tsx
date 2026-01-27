@@ -12,6 +12,7 @@ const Header = () => {
     'experience',
     'projects',
     'educations',
+    'certifications',
     'contact',
   ];
 
