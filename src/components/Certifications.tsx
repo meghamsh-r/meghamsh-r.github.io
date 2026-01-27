@@ -118,7 +118,11 @@ const Certifications = () => {
                   <h3 className="text-xl font-semibold text-foreground">
                     {certification.title}
                   </h3>
-                  <Button asChild variant="outline" className="w-fit">
+                  <Button
+                    asChild
+                    size="sm"
+                    className="w-fit h-7 px-3 text-xs rounded-full bg-foreground text-background hover:bg-foreground/90"
+                  >
                     <a
                       href={certification.link}
                       target="_blank"
